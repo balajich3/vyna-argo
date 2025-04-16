@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYNA AGRO - Organic Jaggery</title>
+  <style>
+    :root {
+      --primary-color: #1b1b1b;
+      --accent-color: #f39c12;
+      --white: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #f9e0ae, #fdebd0, #ffeaa7, #fad390);
+      background-size: 400% 400%;
+      animation: bgAnimation 15s ease infinite;
+      color: var(--primary-color);
+      overflow-x: hidden;
+    }
+
+    @keyframes bgAnimation {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      background: rgba(27, 27, 27, 0.85);
+      color: var(--white);
+      padding: 40px 20px;
+      text-align: center;
+      animation: slideIn 1s ease-out;
+      box-shadow: 0 2px 10px var(--shadow);
+    }
+
+    header img {
+      height: 100px;
+      border-radius: 12px;
+    }
+
+    nav {
+      background: var(--accent-color);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: var(--white);
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #2c3e50;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url('https://images.unsplash.com/photo-1590080876270-6247d5d34c3c?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+      height: 400px;
+      border-radius: 12px;
+      margin: 40px auto;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      font-size: 32px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .product {
+      background: var(--white);
+      padding: 30px;
+      margin: 20px auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px var(--shadow);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+      width: 90%;
+      max-width: 700px;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .certifications img {
+      height: 60px;
+      margin: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .certifications img:hover {
+      transform: scale(1.2);
+    }
+
+    .video-section iframe {
+      width: 90%;
+      max-width: 800px;
+      height: 450px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #1a252f;
+      color: var(--white);
+      padding: 40px;
+      text-align: center;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\vynaLogo" alt="VYNA AGRO Logo">
+    <h1>VYNA AGRO</h1>
+    <p>Natural and Organic Jaggery – A Certified Organic Product</p>
+  </header>
+
+  <!-- The rest of your HTML content remains unchanged -->
+
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero"></section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At VYNA AGRO, we produce 100% organic jaggery using traditional methods without any additives or chemicals. Our jaggery is made from high-quality sugarcane grown without synthetic pesticides or GMOs. We're proud to be FSSAI and Organic India certified, along with many other global standards.</p>
+  </section>
+
+  <section id="mission">
+    <h2>Our Mission & Vision</h2>
+    <p>To promote organic farming practices while delivering the highest quality jaggery to consumers. We envision a healthy future with natural alternatives to refined sugar.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product">
+      <h3>Solid Block Jaggery</h3>
+      <p>Traditional jaggery blocks made from pure sugarcane juice, perfect for cooking and health benefits.</p>
+    </div>
+    <div class="product">
+      <h3>Powdered Jaggery</h3>
+      <p>Convenient to use in tea, coffee, sweets, and daily consumption – all organic and unrefined.</p>
+    </div>
+    <div class="product">
+      <h3>Liquid Jaggery</h3>
+      <p>Perfect as a sweetener in beverages and desserts. Easy to mix, delicious to taste.</p>
+    </div>
+    <div class="product">
+      <h3>Specialty Jaggery</h3>
+      <p>Includes flavored, herbal, or spiced jaggery – healthy and tasty for every household.</p>
+    </div>
+  </section>
+
+  <section id="why">
+    <h2>Why Choose Us</h2>
+    <p>✅ 100% Organic | ✅ Traditional Methods | ✅ Chemical-Free | ✅ Certified by FSSAI & Organic India</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\FSSAI_logo" alt="FSSAI">
+      <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\OrganicIndia" alt="Organic India">
+      <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\i-standard-logo" alt="ISO 22000">
+      <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\GMP" alt="GMP">
+      <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\HACCP" alt="HACCP">
+      <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\FDA" alt="FDA">
+    </div>
+  </section>
+
+  <section id="videos" class="video-section">
+    <h2>Our Videos</h2>
+    <iframe src="https://www.youtube.com/embed/LzIsCpqe1to" title="VYNA AGRO - Organic Jaggery Manufacturing" allowfullscreen></iframe>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\Screenshot 2025-04-16 223721.png" alt="Factory Image">
+      <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\Screenshot 2025-04-16 223804.png" alt="Packaging">
+      <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\Screenshot 2025-04-16 224051.png" alt="Customers">
+      <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\Fields" alt="Fields">
+      <img src="C:\Users\balaj\OneDrive\Desktop\HTML\VYNA\Workers" alt="Workers">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> Yerukanaidu Agros, Janguluru Village, Makavarapalem Mandal, Anakapalli District, Andhra Pradesh – 531113, India</p>
+    <p><strong>Phone:</strong> +91 95221 99999 / 99942 51949</p>
+    <p><strong>Email:</strong> vynajaggery.ind@gmail.com</p>
+    <p><strong>Website:</strong> <a href="http://www.vynajindia.com">www.vynajindia.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VYNA AGRO. All rights reserved.</p>
+  </footer>
+</body>
+</html>
